@@ -209,6 +209,64 @@ function App() {
                 </div>
             </div>
 
+            <div className="categories">
+                <div className="categories__left">
+                    <h2 className="categories__main-title">Categorias</h2>
+
+                    <table className="categories__table">
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Idade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tbol</td>
+                                <td>5 a 8 anos</td>
+                            </tr>
+                            <tr>
+                                <td>Pré-infantil</td>
+                                <td>7 a 10 anos</td>
+                            </tr>
+                            <tr>
+                                <td>Infantil</td>
+                                <td>11 e 12 anos</td>
+                            </tr>
+                            <tr>
+                                <td>Pré-júnior</td>
+                                <td>13 e 14 anos</td>
+                            </tr>
+                            <tr>
+                                <td>Júnior</td>
+                                <td>15 e 16 anos</td>
+                            </tr>
+                            <tr>
+                                <td>Juvenil</td>
+                                <td>17 e 18 anos</td>
+                            </tr>
+                            <tr>
+                                <td>Softbol</td>
+                                <td>8 a 13 anos</td>
+                            </tr>
+                            <tr>
+                                <td>Veteranos</td>
+                                <td>50+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className="categories__right">
+                    <div className="categories__grid">
+                        <img src="https://images.unsplash.com/photo-1578432014316-48b448d79d57?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHw0fHxiYXNlYmFsbHxlbnwwfHx8fDE3MDczNDE4NzV8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=688&h=449" alt="Baseball 1" className="categories__image" />
+                        <img src="https://images.unsplash.com/photo-1578432014316-48b448d79d57?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHw0fHxiYXNlYmFsbHxlbnwwfHx8fDE3MDczNDE4NzV8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=688&h=449" alt="Baseball 2" className="categories__image" />
+                        <img src="https://images.unsplash.com/photo-1578432014316-48b448d79d57?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHw0fHxiYXNlYmFsbHxlbnwwfHx8fDE3MDczNDE4NzV8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=688&h=449" alt="Baseball 3" className="categories__image" />
+                        <img src="https://images.unsplash.com/photo-1578432014316-48b448d79d57?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHw0fHxiYXNlYmFsbHxlbnwwfHx8fDE3MDczNDE4NzV8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=688&h=449" alt="Baseball 4" className="categories__image" />
+                    </div>
+                </div>
+            </div>
+
         </>
     )
 }
