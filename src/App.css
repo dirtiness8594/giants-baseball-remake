@@ -80,7 +80,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: .5rem 1rem;
-  background-color: orange;
+  background-color: rgb(206, 206, 206);
 }
 .header__logo {
   flex: .1;
@@ -130,4 +130,40 @@ a {
   margin: 0 0 -3px;
   color: white;
   font-size: 1.5rem;
+}
+
+/* Headline */
+
+.headline {
+  padding: 1rem 1rem 2rem;
+  background-color: rgb(197, 197, 197);
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap ;
+}
+
+.headline__text {
+  font-size: 8rem;
+  color: black;
+  text-align: center;
+  font-family:  sans-serif;
+  font-weight: 600;
+}
+
+.headline__info {
+  font-size: 2rem;
+}
+
+/* Highlight */
+
+.highlight {
+  background-color: gray;
+  /* height: 70vh; */
+  padding: 1rem;
+}
+
+.hightlight img {
+  /* max-width: 100%; */
 }

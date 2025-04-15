@@ -2,7 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import { FaInstagram } from "react-icons/fa";
 import { CiCircleInfo, CiMemoPad, CiCirclePlus, CiHome, CiFacebook, CiChat1 } from "react-icons/ci";
-
+import { BsStars } from "react-icons/bs";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 
 function App() {
@@ -65,6 +67,34 @@ function App() {
             </div>
         </header>
 
+        <section className="headline">
+            <div className="headline__text">
+                Bem-vindo ao <br />São Paulo Giants!
+            </div>
+            
+            <div className="headline__info">
+            <BsStars />    O único time de beiseball de São Paulo.
+            </div>
+        </section>
+
+        <section className="highlight">
+
+            <div className="highlight__images">
+            <Swiper
+                // spaceBetween={50}
+                slidesPerView={1}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+                >
+                <SwiperSlide>
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                </SwiperSlide>
+                </Swiper>
+            </div>
+        </section>
         </>
     )
 }
