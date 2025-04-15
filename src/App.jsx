@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { FaInstagram } from "react-icons/fa";
-import { CiCircleInfo, CiMemoPad, CiCirclePlus, CiHome, CiFacebook, CiChat1 } from "react-icons/ci";
+import { CiCircleInfo, CiBaseball, CiMemoPad, CiCirclePlus, CiHome, CiFacebook, CiChat1 } from "react-icons/ci";
 import { BsStars } from "react-icons/bs";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -98,11 +98,23 @@ function App() {
                 </div>
             </section>
 
-            <section className="highlight">
-                <div className="highlight__title">Conheça mais sobre o time</div>
-                <div className="hightlight__info">
-                <CiCircleInfo />Lorem Ipsum Dolor  Sit Amet
+            <div className="divider">
+                <CiBaseball />
+                <CiBaseball />
+                <CiBaseball />
+            </div>
 
+            <section className="highlight">
+                <div className="highlight__title">Conheça nosso time</div>
+                <div className="highlight__info">
+                <CiCircleInfo /> Nossa historia
+                
+                <p>
+                A muito temop dedicamos nossa paixão pelo Beisebol. Fundados em 1998. Contando hje com tantos membros, somos.
+                </p>
+
+                <button class="localization__button">Ver história completa</button>
+            
                 </div>
                 <div className="highlight__images">
                     <Swiper

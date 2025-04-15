@@ -283,7 +283,7 @@ a {
   /* height: 70vh; */
   padding: 1rem;
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 0 1rem;
 }
 
 .highlight img {
@@ -301,6 +301,16 @@ a {
   font-size: 1.5rem;
 }
 
+.highlight__info p {
+  max-width: 700px;
+  margin: 2rem auto;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.highlight__images {
+  padding: 3rem 0 0;
+}
 /* Localization */
 
 .localization {
@@ -555,4 +565,23 @@ a {
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: -1.5rem;
+  align-items: center;
+}
+
+.divider svg {
+  margin: 0 0 -3px;
+  font-size: 2rem;
+}
+
+.divider svg:nth-child(even) {
+  font-size: 3rem;
 }
