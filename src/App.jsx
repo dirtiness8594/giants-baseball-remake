@@ -6,26 +6,29 @@ import { BsStars } from "react-icons/bs";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css/pagination';
+
 
 function App() {
 
     return (
         <>
 
-        <header className="header">
+            <header className="header">
                 <div className="header__top">
                     <div className="header__name">
                         São Paulo Giants Beiseball & Softball
                     </div>
                     <div className="header__website">
                         <a href="">
-                        giants.com.br
+                            giants.com.br
                         </a>
                     </div>
                 </div>
                 <div className="header__bottom">
                     <div className="header__logo">
-                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=700,fit=crop,q=95/YrDXLjN9Kgf9k0GL/logo1-mv0lxv8ywrfGzpkd.jpg" alt="" srcset="" />
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=97,h=41,fit=crop,trim=0;0;13.738095238095237;0/YrDXLjN9Kgf9k0GL/logo-gts-AGBvrJ7MzkUq35e4.png" alt="" srcset="" />
                     </div>
                     <nav className="header__nav">
                         <ul className="header__list header__list--pages">
@@ -63,38 +66,83 @@ function App() {
                         </ul>
                     </nav>
                 </div>
-            <div className="header__container">
-            </div>
-        </header>
+                <div className="header__container">
+                </div>
+            </header>
 
-        <section className="headline">
-            <div className="headline__text">
-                Bem-vindo ao <br />São Paulo Giants!
-            </div>
-            
-            <div className="headline__info">
-            <BsStars />    O único time de beiseball de São Paulo.
-            </div>
-        </section>
+            <section className="headline">
+                <div className="headline__text">
+                    Bem-vindo ao <br />São Paulo Giants!
+                </div>
 
-        <section className="highlight">
+                <div className="headline__info">
+                    <BsStars />    O único time de beiseball de São Paulo.
+                </div>
+            </section>
 
-            <div className="highlight__images">
-            <Swiper
-                // spaceBetween={50}
-                slidesPerView={1}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-                >
-                <SwiperSlide>
-                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
-                </SwiperSlide>
-                </Swiper>
+            <section className="highlight">
+
+                <div className="highlight__images">
+                    <Swiper
+                        // spaceBetween={50}
+                        slidesPerView={3}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+
+                        modules={[Autoplay, Pagination]}
+                        pagination={{ clickable: true }}
+                        autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                        }}
+                        loop={true}
+                    >
+                        <SwiperSlide>
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </section>
+
+            <div className="localization">
+                <div className="localization__left">
+                    <h2 className="localization__main-title">Localização</h2>
+
+                    <div className="localization__section">
+                        <h4 className="localization__subtitle">Endereço</h4>
+                        <p>Av. Pres. Castelo Branco, 5446 - Bom Retiro, São Paulo - SP, 01142-300</p>
+                    </div>
+
+                    <div className="localization__section">
+                        <h4 className="localization__subtitle">Contatos</h4>
+                        <p><a href="mailto:contato@giants.com.br">contato@giants.com.br</a></p>
+                        <p>(11) 99290-1234 (Mark)</p>
+                    </div>
+
+                    <div className="localization__section">
+                        <h4 className="localization__subtitle">Redes Sociais</h4>
+                        <div className="localization__socials">
+                            <a href="#" target="_blank">Facebook</a>
+                            <a href="#" target="_blank">Instagram</a>
+                            <a href="#" target="_blank">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="localization__right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58533.68750243117!2d-46.633793!3d-23.519714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5870724becd5%3A0x7775d441f9be4d5c!2sAv.%20Pres.%20Castelo%20Branco%2C%205446%20-%20Casa%20Verde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005034-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1744752460400!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </section>
+            I
         </>
     )
 }
