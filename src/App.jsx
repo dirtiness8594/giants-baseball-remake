@@ -8,9 +8,21 @@ import 'swiper/css';
 
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
-
+import { useForm } from 'react-hook-form';
 
 function App() {
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+        reset,
+    } = useForm();
+
+    const onSubmit = (data) => {
+        console.log('Form data:', data);
+        reset(); // limpa o form depois de enviar
+    };
 
     return (
         <>
@@ -81,7 +93,6 @@ function App() {
             </section>
 
             <section className="highlight">
-
                 <div className="highlight__images">
                     <Swiper
                         // spaceBetween={50}
@@ -92,8 +103,8 @@ function App() {
                         modules={[Autoplay, Pagination]}
                         pagination={{ clickable: true }}
                         autoplay={{
-                        delay: 3000,
-                        disableOnInteraction: false,
+                            delay: 3000,
+                            disableOnInteraction: false,
                         }}
                         loop={true}
                     >
@@ -116,7 +127,6 @@ function App() {
             <div className="localization">
                 <div className="localization__left">
                     <h2 className="localization__main-title">Localização</h2>
-
                     <div className="localization__section">
                         <h4 className="localization__subtitle">Endereço</h4>
                         <p>Av. Pres. Castelo Branco, 5446 - Bom Retiro, São Paulo - SP, 01142-300</p>
@@ -142,7 +152,63 @@ function App() {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58533.68750243117!2d-46.633793!3d-23.519714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5870724becd5%3A0x7775d441f9be4d5c!2sAv.%20Pres.%20Castelo%20Branco%2C%205446%20-%20Casa%20Verde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005034-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1744752460400!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            I
+
+            <div className="contact">
+                <div className="contact__container">
+                    <h2 className="contact__main-title">Contact</h2>
+
+                    <form onSubmit={handleSubmit(onSubmit)} className="contact__form">
+                        <div className="contact__field">
+                            <label htmlFor="name">Name</label>
+                            <input
+                                id="name"
+                                type="text"
+                                {...register('name')}
+                                placeholder="Your name"
+                            />
+                        </div>
+
+                        <div className="contact__field">
+                            <label htmlFor="email">Email *</label>
+                            <input
+                                id="email"
+                                type="email"
+                                {...register('email', { required: 'Email is required' })}
+                                placeholder="you@example.com"
+                            />
+                            {errors.email && (
+                                <span className="contact__error">{errors.email.message}</span>
+                            )}
+                        </div>
+
+                        <div className="contact__field">
+                            <label htmlFor="phone">Phone</label>
+                            <input
+                                id="phone"
+                                type="tel"
+                                {...register('phone')}
+                                placeholder="(11) 91234-5678"
+                            />
+                        </div>
+
+                        <div className="contact__field">
+                            <label htmlFor="message">Message *</label>
+                            <textarea
+                                id="message"
+                                rows="4"
+                                {...register('message', { required: 'Message is required' })}
+                                placeholder="Write your message here..."
+                            ></textarea>
+                            {errors.message && (
+                                <span className="contact__error">{errors.message.message}</span>
+                            )}
+                        </div>
+
+                        <button type="submit" className="contact__submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
         </>
     )
 }
