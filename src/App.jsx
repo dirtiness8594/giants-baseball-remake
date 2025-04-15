@@ -90,6 +90,12 @@ function App() {
                 <div className="headline__info">
                     <BsStars />    O único time de beiseball de São Paulo.
                 </div>
+
+                <div className="headline__options">
+                    <button className="headline__option">Localização</button>
+                    <button className="headline__option">Fale conosco</button>
+                    <button className="headline__option">Ajuda</button>
+                </div>
             </section>
 
             <section className="highlight">
@@ -130,6 +136,7 @@ function App() {
                     <div className="localization__section">
                         <h4 className="localization__subtitle">Endereço</h4>
                         <p>Av. Pres. Castelo Branco, 5446 - Bom Retiro, São Paulo - SP, 01142-300</p>
+                        <button className="localization__button">Ver no mapa</button>
                     </div>
 
                     <div className="localization__section">
@@ -149,7 +156,11 @@ function App() {
                 </div>
 
                 <div className="localization__right">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58533.68750243117!2d-46.633793!3d-23.519714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5870724becd5%3A0x7775d441f9be4d5c!2sAv.%20Pres.%20Castelo%20Branco%2C%205446%20-%20Casa%20Verde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005034-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1744752460400!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <div className="localization__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58533.68750243117!2d-46.633793!3d-23.519714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5870724becd5%3A0x7775d441f9be4d5c!2sAv.%20Pres.%20Castelo%20Branco%2C%205446%20-%20Casa%20Verde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005034-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1744752460400!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
                 </div>
             </div>
 
