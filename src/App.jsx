@@ -13,10 +13,12 @@ function App() {
         <header className="header">
                 <div className="header__top">
                     <div className="header__name">
-                        Dodgers
+                        São Paulo Giants Beiseball & Softball
                     </div>
                     <div className="header__website">
-                        Dodgers.com
+                        <a href="">
+                        giants.com.br
+                        </a>
                     </div>
                 </div>
                 <div className="header__bottom">
@@ -27,22 +29,22 @@ function App() {
                         <ul className="header__list header__list--pages">
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                    <CiHome />Home
+                                    Home
                                 </a>
                             </li>
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                    <CiMemoPad />Formulário
+                                    Formulário
                                 </a>
                             </li>
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                    <CiCirclePlus />Sobre
+                                    Sobre
                                 </a>
                             </li>
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                    <CiCircleInfo />Ajuda
+                                    Ajuda
                                 </a>
                             </li>
                         </ul>
