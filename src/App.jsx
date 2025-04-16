@@ -40,7 +40,7 @@ function App() {
                 </div>
                 <div className="header__bottom">
                     <div className="header__logo">
-                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=97,h=41,fit=crop,trim=0;0;13.738095238095237;0/YrDXLjN9Kgf9k0GL/logo-gts-AGBvrJ7MzkUq35e4.png" alt="" srcset="" />
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=97,h=41,fit=crop,trim=0;0;13.738095238095237;0/YrDXLjN9Kgf9k0GL/logo-gts-AGBvrJ7MzkUq35e4.png" alt="" srcSet="" />
                     </div>
                     <nav className="header__nav">
                         <ul className="header__list header__list--pages">
@@ -107,14 +107,14 @@ function App() {
             <section className="highlight">
                 <div className="highlight__title">Conheça nosso time</div>
                 <div className="highlight__info">
-                <CiCircleInfo /> Nossa historia
-                
-                <p>
-                A muito temop dedicamos nossa paixão pelo Beisebol. Fundados em 1998. Contando hje com tantos membros, somos.
-                </p>
+                    <CiCircleInfo /> Nossa historia
 
-                <button class="localization__button">Ver história completa</button>
-            
+                    <p>
+                        A muito temop dedicamos nossa paixão pelo Beisebol. Fundados em 1998. Contando hje com tantos membros, somos.
+                    </p>
+
+                    <button className="localization__button">Ver história completa</button>
+
                 </div>
                 <div className="highlight__images">
                     <Swiper
@@ -132,16 +132,16 @@ function App() {
                         loop={true}
                     >
                         <SwiperSlide>
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcSet="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcSet="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcSet="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcset="" />
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcSet="" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -152,8 +152,9 @@ function App() {
                 <div className="categories__left">
                     <h2 className="categories__main-title">Categorias</h2>
                     <p className="categories__info">
-                        <CiCircleInfo />Lorem Ipsum Dolor  Sit Amet
+                        <CiCircleInfo />Categorias de base que temos:
                     </p>
+                    {/* <img src="https://cdn-icons-png.flaticon.com/512/2022/2022688.png" alt="" srcSet="" /> */}
                     <table className="categories__table">
                         <thead>
                             <tr>
@@ -208,6 +209,12 @@ function App() {
                 </div>
             </div>
 
+            <div className="divider">
+                <CiBaseball />
+                <CiBaseball />
+                <CiBaseball />
+            </div>
+
             <div className="localization">
                 <div className="localization__left">
                     <h2 className="localization__main-title">Localização</h2>
@@ -235,7 +242,7 @@ function App() {
                 <div className="localization__right">
 
                     <div className="localization__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58533.68750243117!2d-46.633793!3d-23.519714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5870724becd5%3A0x7775d441f9be4d5c!2sAv.%20Pres.%20Castelo%20Branco%2C%205446%20-%20Casa%20Verde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005034-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1744752460400!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58533.68750243117!2d-46.633793!3d-23.519714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5870724becd5%3A0x7775d441f9be4d5c!2sAv.%20Pres.%20Castelo%20Branco%2C%205446%20-%20Casa%20Verde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005034-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1744752460400!5m2!1sen!2sus" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                 </div>
@@ -301,6 +308,19 @@ function App() {
                 </div>
             </div>
 
+            <footer className="footer">
+                <div className="footer__content">
+                    <div className="footer__logo">
+                        <img
+                            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=97,h=41,fit=crop,trim=0;0;13.738095238095237;0/YrDXLjN9Kgf9k0GL/logo-gts-AGBvrJ7MzkUq35e4.png"
+                            alt="Logo São Paulo Giants"
+                        />
+                    </div>
+                    <div className="footer__rights">
+                        © {new Date().getFullYear()} São Paulo Giants Beiseball & Softball. Todos os direitos reservados.
+                    </div>
+                </div>
+            </footer>
 
 
         </>
