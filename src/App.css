@@ -171,9 +171,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: .0rem 1rem;
-  /* margin: .5rem 0 0; */
   background: linear-gradient(to right, #ff7eb3, #ffb347, #56cfe1);
-  /* background: linear-gradient(to right, #ffa218, #ebbd80, #ffa218); */
 }
 
 .header__logo {
@@ -192,7 +190,6 @@ a {
 
 .header__logo {
   text-align: center;
-  /* background-color: white; */
   padding: .5rem 0;
 }
 
@@ -215,11 +212,9 @@ a {
 
 .header__list--social {
   gap: 1rem;
-
 }
 
 .header__list--social svg {
-
   font-size: 2rem;
 }
 
@@ -229,11 +224,6 @@ a {
   justify-content: center;
   color: white;
 }
-
-
-/* .header__item:hover {
-  color: red !important;
-} */
 
 .header__anchor {
   display: flex;
@@ -263,8 +253,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-
 }
 
 .headline__text {
@@ -297,7 +285,6 @@ a {
 .headline__option {
   border-radius: unset;
   background-color: unset;
-  /* text-decoration: underline; */
   border-bottom: 1px solid black;
   padding: .2rem 0;
 }
@@ -306,8 +293,6 @@ a {
 /* Highlight */
 
 .highlight {
-  /* background-color: gray; */
-  /* height: 70vh; */
   padding: 1rem;
   text-align: center;
   color: black;
@@ -315,7 +300,6 @@ a {
 }
 
 .highlight img {
-  /* max-width: 100%; */
   width: 100%;
 }
 
@@ -352,19 +336,10 @@ a {
   gap: 2rem;
   padding: 0 2rem 0;
   flex-wrap: wrap;
-  /* background-color: #f5f5f5;
-  background: url(https://static.vecteezy.com/system/resources/previews/001/203/134/non_2x/baseball-player-png.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  background-color: #e5e5f7;
-  opacity: 0.8;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#faba7155, #fcfcff); */
   background-color: #f5f5f5;
 }
 
 .localization__left {
-  /* flex: 1; */
   width: 100%;
   min-width: 300px;
   justify-items: center;
@@ -372,13 +347,6 @@ a {
   padding: 2rem;
   border-radius: 0 0 1rem 1rem;
 }
-
-/* .localization__right {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  min-width: 300px;
-} */
 
 .localization__button {
   border-radius: unset;
@@ -436,7 +404,6 @@ a {
 }
 
 .localization__map {
-  /* display: none; */
   padding: 0 0 2rem;
 }
 
@@ -455,16 +422,9 @@ a {
 
 .contact {
   padding: 3rem 2rem;
-  /* background-color: #f9f9f9; */
-
-  background-color: #f5f5f5;
-  /* background: url(https://static.vecteezy.com/system/resources/previews/001/203/134/non_2x/baseball-player-png.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-
   background-color: #e5e5f7;
   opacity: 0.8;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#faba7155, #fcfcff); */
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#faba7155, #fcfcff);
   color: black;
 }
 
@@ -482,7 +442,6 @@ a {
 
 .contact__form {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: center;
@@ -538,7 +497,6 @@ a {
 
 .contact__submit {
   padding: 1rem;
-  /* color: black; */
   border: none;
   background-color: orange;
   padding: .5rem;
@@ -553,6 +511,7 @@ a {
 .contact__submit:hover {}
 
 /* Categories */
+
 .categories {
   display: flex;
   flex-wrap: wrap;
@@ -561,8 +520,6 @@ a {
   align-items: flex-start;
   background-color: #f5f5f5;
   color: black;
-  /* 
-  background: url(https://cdn-icons-png.flaticon.com/512/2022/2022688.png) no-repeat center; */
   background-size: contain;
 }
 
@@ -572,7 +529,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* gap: 2rem; */
   background-color: #fff;
   border-radius: 1rem 1rem 0 0;
   padding: 2rem 2rem 4rem;
@@ -600,7 +556,6 @@ a {
 .categories__table {
   width: 31%;
   border-collapse: collapse;
-  /* background-color: white; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -649,7 +604,6 @@ a {
 
 .categories__image {
   width: calc(50% - 0.5rem);
-  /* duas por linha com gap */
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
@@ -657,6 +611,7 @@ a {
 }
 
 /* Sponsor */
+
 .sponsors {
   text-align: center;
   padding: 50px;
@@ -721,7 +676,6 @@ a {
   margin: 2rem;
 }
 
-
 /**/
 
 .divider {
@@ -745,6 +699,7 @@ a {
 }
 
 /* footer */
+
 .footer {
   background-color: #f5f5f5;
   padding: 20px 0;
