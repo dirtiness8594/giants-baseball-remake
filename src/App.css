@@ -273,6 +273,7 @@ a {
   text-align: center;
   font-family: sans-serif;
   font-weight: 600;
+  padding: 3rem 0 0;
 }
 
 .headline__text span {
@@ -327,6 +328,10 @@ a {
 .hightlight__info {
   margin: 2rem 0;
   font-size: 1.5rem;
+}
+
+.highlight__info svg {
+  margin: 0 .5rem -3px 0;
 }
 
 .highlight__info p {
@@ -571,6 +576,10 @@ a {
   background-color: #fff;
   border-radius: 1rem 1rem 0 0;
   padding: 2rem 2rem 4rem;
+}
+
+.categories__info svg {
+  margin: 0 .5rem -3px 0;
 }
 
 .categories__info {
