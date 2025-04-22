@@ -2,9 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import { FaInstagram } from "react-icons/fa";
 import { CiCircleInfo, CiBaseball, CiMemoPad, CiCirclePlus, CiHome, CiFacebook, CiChat1 } from "react-icons/ci";
-import { BsStars } from "react-icons/bs";
+import { BsStars, BsBookmarkHeart, BsFillHousesFill, BsFileText, BsPatchQuestion, BsWhatsapp } from "react-icons/bs";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { RiFacebookCircleLine } from "react-icons/ri";
 
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
@@ -46,22 +47,23 @@ function App() {
                         <ul className="header__list header__list--pages">
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                    Home
+                                <BsFillHousesFill />Home
                                 </a>
                             </li>
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                    Formulário
+                                    <BsBookmarkHeart />Formulário
                                 </a>
                             </li>
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                    Sobre
+                                <BsFileText />
+                                Sobre
                                 </a>
                             </li>
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                    Ajuda
+                                    <BsPatchQuestion />Ajuda
                                 </a>
                             </li>
                         </ul>
@@ -70,10 +72,10 @@ function App() {
                                 <FaInstagram />
                             </li>
                             <li className="header__item">
-                                <CiFacebook />
+                                <RiFacebookCircleLine />
                             </li>
                             <li className="header__item">
-                                <CiChat1 />
+                                <BsWhatsapp />
                             </li>
                         </ul>
                     </nav>
@@ -84,7 +86,7 @@ function App() {
 
             <section className="headline">
                 <div className="headline__text">
-                    Bem-vindo ao <br />São Paulo Giants!
+                    Bem-vindo ao <br />São Paulo <span>Giants!</span>
                 </div>
 
                 <div className="headline__info">
@@ -119,7 +121,7 @@ function App() {
                 <div className="highlight__images">
                     <Swiper
                         // spaceBetween={50}
-                        slidesPerView={2}
+                        slidesPerView={1}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
 
