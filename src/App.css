@@ -161,7 +161,7 @@ a {
 .header__top {
   display: flex;
   justify-content: space-between;
-  padding: .8rem 1rem;
+  padding: .5rem 1rem;
   font-size: 1rem;
   align-items: center;
   color: black;
@@ -368,13 +368,12 @@ a {
   border-radius: 0 0 1rem 1rem;
 }
 
-.localization__right {
+/* .localization__right {
   width: 100%;
   display: flex;
   justify-content: center;
   min-width: 300px;
-  /* display: none; */
-}
+} */
 
 .localization__button {
   border-radius: unset;
@@ -388,10 +387,11 @@ a {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
+  color: black;
 }
 
 .localization__section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -400,16 +400,18 @@ a {
 }
 
 .localization__subtitle {
-  font-weight: bold;
-  color: #333;
-  font-size: 1rem;
-  text-align: center;
+   font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: black;
 }
 
 .localization p {
   font-size: 1rem;
   text-align: center;
   max-width: 700px;
+  color: black;
   line-height: 2rem;
 }
 
@@ -419,8 +421,18 @@ a {
   flex-wrap: wrap;
 }
 
+.localization__socials a {
+  border-radius: unset;
+    background-color: unset;
+    border-bottom: 1px solid black;
+    padding: .2rem 0;
+    width: fit-content;
+    color: black;
+}
+
 .localization__map {
-  display: none;
+  /* display: none; */
+  padding: 0 0 2rem;
 }
 
 .localization__socIials a {
@@ -441,13 +453,13 @@ a {
   /* background-color: #f9f9f9; */
 
   background-color: #f5f5f5;
-  background: url(https://static.vecteezy.com/system/resources/previews/001/203/134/non_2x/baseball-player-png.png);
+  /* background: url(https://static.vecteezy.com/system/resources/previews/001/203/134/non_2x/baseball-player-png.png);
   background-size: contain;
   background-repeat: no-repeat;
 
   background-color: #e5e5f7;
   opacity: 0.8;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#faba7155, #fcfcff);
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#faba7155, #fcfcff); */
   color: black;
 }
 
@@ -474,10 +486,20 @@ a {
 .contact__info {
   margin: 2rem 0;
   font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.contact__info svg {
+  margin: 0 .5rem -3px 0;
+}
+
+.contact__info b {
+  font-weight: 600;
 }
 
 .contact__field {
   display: flex;
+  flex: 1;
   flex-direction: column;
 }
 
@@ -513,12 +535,13 @@ a {
   padding: 1rem;
   /* color: black; */
   border: none;
-  border-bottom: 1px solid black;
-  padding: .2rem 0;
+  background-color: orange;
+  padding: .5rem;
+  color: white;
+  border-radius: 1rem;
   font-weight: bold;
-  border-radius: 0;
+  width: 100%;
   cursor: pointer;
-  width: fit-content;
   transition: background 0.2s ease-in-out;
 }
 
@@ -623,6 +646,74 @@ a {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Sponsor */
+.sponsors {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.sponsors__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sponsors__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sponsor {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sponsor__logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.sponsor__name {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.sponsor__description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.sponsor__link {
+  border-radius: unset;
+  background-color: unset;
+  border-bottom: 1px solid black;
+  padding: .2rem 0;
+  width: fit-content;
+  color: black;
+}
+
+.sponsor__link:hover {
+  background-color: #0056b3;
+}
+
+.sponsor__info {
+  color: black;
+  margin: 2rem;
+}
+
+
+/**/
 
 .divider {
   width: 100%;

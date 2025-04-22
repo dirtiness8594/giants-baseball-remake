@@ -20,6 +20,8 @@ function App() {
         reset,
     } = useForm();
 
+    const [showMap, setShowMap] = useState(false);
+
     const onSubmit = (data) => {
         console.log('Form data:', data);
         reset(); // limpa o form depois de enviar
@@ -47,7 +49,7 @@ function App() {
                         <ul className="header__list header__list--pages">
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                <BsFillHousesFill />Home
+                                    <BsFillHousesFill />Home
                                 </a>
                             </li>
                             <li className="header__item">
@@ -57,8 +59,8 @@ function App() {
                             </li>
                             <li className="header__item">
                                 <a href="" className="header__anchor">
-                                <BsFileText />
-                                Sobre
+                                    <BsFileText />
+                                    Sobre
                                 </a>
                             </li>
                             <li className="header__item">
@@ -69,13 +71,19 @@ function App() {
                         </ul>
                         <ul className="header__list header__list--social">
                             <li className="header__item">
-                                <FaInstagram />
+                                <a className="header__anchor" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <FaInstagram />
+                                </a>
                             </li>
                             <li className="header__item">
-                                <RiFacebookCircleLine />
+                                <a className="header__anchor" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <RiFacebookCircleLine />
+                                </a>
                             </li>
                             <li className="header__item">
-                                <BsWhatsapp />
+                                <a className="header__anchor" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <BsWhatsapp />
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -148,6 +156,29 @@ function App() {
                     </Swiper>
                 </div>
             </section>
+
+            <div className="sponsors">
+                <h2 className="sponsors__title">Nossos patrocinadores</h2>
+                <p className="sponsor__info">
+                <CiCircleInfo /> Nossa historia
+
+                </p>
+                <div className="sponsors__list">
+                    <div className="sponsor">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=269,h=190,fit=crop/YrDXLjN9Kgf9k0GL/cloudace-A1aKkNbewXu5x5My.jpg" alt="Sponsor 1 Logo" className="sponsor__logo" />
+                        <h3 className="sponsor__name">Cloud ICE</h3>
+                        <p className="sponsor__description"></p>
+                        <a href="https://www.sponsor1website.com" target="_blank" className="sponsor__link">Visit Website</a>
+                    </div>
+
+                    <div className="sponsor">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=293,h=163,fit=crop/YrDXLjN9Kgf9k0GL/maisesporte-m7VpLjR8DEHkpRlJ.png" alt="Sponsor 2 Logo" className="sponsor__logo" />
+                        <h3 className="sponsor__name">+ Esporte - Remédio</h3>
+                        <p className="sponsor__description"></p>
+                        <a href="https://www.sponsor2website.com" target="_blank" className="sponsor__link">Visit Website</a>
+                    </div>
+                </div>
+            </div>
 
             <div className="categories">
 
@@ -223,12 +254,18 @@ function App() {
                     <div className="localization__section">
                         <h4 className="localization__subtitle">Endereço</h4>
                         <p>Av. Pres. Castelo Branco, 5446 - Bom Retiro, São Paulo - SP, 01142-300</p>
-                        <button className="localization__button">Ver no mapa</button>
+                        {!showMap && (
+                            <button onClick={() => setShowMap(true)} className="localization__button">Ver no mapa</button>
+                        )}
                     </div>
-
+                    {showMap && (
+                        <div className="localization__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58533.68750243117!2d-46.633793!3d-23.519714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5870724becd5%3A0x7775d441f9be4d5c!2sAv.%20Pres.%20Castelo%20Branco%2C%205446%20-%20Casa%20Verde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005034-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1744752460400!5m2!1sen!2sus" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    )}
                     <div className="localization__section">
                         <h4 className="localization__subtitle">Contatos</h4>
-                        <p><a href="mailto:contato@giants.com.br">contato@giants.com.br</a> - (11) 99290-1234 (Mark)</p>
+                        <p><a href="mailto:contato@giants.com.br">contato@giants.com.br</a> -     <a href="tel:+5511992901234">(11) 99290-1234 (Mark)</a></p>
                     </div>
 
                     <div className="localization__section">
@@ -241,20 +278,14 @@ function App() {
                     </div>
                 </div>
 
-                <div className="localization__right">
 
-                    <div className="localization__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58533.68750243117!2d-46.633793!3d-23.519714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5870724becd5%3A0x7775d441f9be4d5c!2sAv.%20Pres.%20Castelo%20Branco%2C%205446%20-%20Casa%20Verde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005034-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1744752460400!5m2!1sen!2sus" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                </div>
             </div>
 
             <div className="contact">
                 <div className="contact__container">
                     <h2 className="contact__main-title">Contact</h2>
                     <p className="contact__info">
-                        <CiCircleInfo />Lorem Ipsum Dolor  Sit Amet
+                        <CiCircleInfo />Iremos responder seu contato em <b>em até 48h</b>, então escolha seu e-mail favorito.
                     </p>
                     <form onSubmit={handleSubmit(onSubmit)} className="contact__form">
                         <div className="contact__field">
