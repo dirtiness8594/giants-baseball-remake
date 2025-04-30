@@ -53,12 +53,12 @@ function App() {
                                 </a>
                             </li>
                             <li className="header__item">
-                                <a href="" className="header__anchor">
+                                <a href="#" className="header__anchor">
                                     <BsBookmarkHeart />Formulário
                                 </a>
                             </li>
                             <li className="header__item">
-                                <a href="" className="header__anchor">
+                                <a href="#about" className="header__anchor">
                                     <BsFileText />
                                     Sobre
                                 </a>
@@ -108,13 +108,13 @@ function App() {
                 </div>
             </section>
 
-            <div className="divider">
+            <div className="divider" id="divider__animated">
                 <CiBaseball />
-                <CiBaseball />
+                <CiBaseball className="animated"/>
                 <CiBaseball />
             </div>
 
-            <section className="highlight">
+            <section className="highlight" id="about">
                 <div className="highlight__title">Conheça nosso time</div>
                 <div className="highlight__info">
                     <CiCircleInfo /> Nossa historia
