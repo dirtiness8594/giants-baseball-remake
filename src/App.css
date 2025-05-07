@@ -801,3 +801,64 @@ a {
     transform: scale(1) rotate(360deg);
   }
 }
+
+
+
+/*
+
+
+
+
+
+*/
+
+
+/* Página genérica */
+
+.page {
+  padding: 3rem 2rem;
+  background-color: #fefefe;
+  color: black;
+}
+
+.page__header {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.page__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page__subtitle {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page__subtitle svg {
+  margin-bottom: -3px;
+}
+
+.page__content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: #333;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.page__content p + p {
+  margin-top: 1.5rem;
+}
