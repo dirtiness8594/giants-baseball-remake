@@ -2,21 +2,21 @@ import { useState } from "react";
 import "./App.css";
 import { FaInstagram } from "react-icons/fa";
 import {
-  CiCircleInfo,
-  CiBaseball,
-  CiMemoPad,
-  CiCirclePlus,
-  CiHome,
-  CiFacebook,
-  CiChat1,
+    CiCircleInfo,
+    CiBaseball,
+    CiMemoPad,
+    CiCirclePlus,
+    CiHome,
+    CiFacebook,
+    CiChat1,
 } from "react-icons/ci";
 import {
-  BsStars,
-  BsBookmarkHeart,
-  BsFillHousesFill,
-  BsFileText,
-  BsPatchQuestion,
-  BsWhatsapp,
+    BsStars,
+    BsBookmarkHeart,
+    BsFillHousesFill,
+    BsFileText,
+    BsPatchQuestion,
+    BsWhatsapp,
 } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GiBaseballBat, GiBaseballGlove } from "react-icons/gi";
@@ -38,20 +38,20 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  return (
-    <>
-      <Header />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/page/historia" element={<Page />} />
-        </Routes>
-      </Router>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/page/historia" element={<Page />} />
+                </Routes>
+            </Router>
+            <Footer />
+        </>
+    );
 }
 
 export default App;

@@ -12,25 +12,25 @@ import Contact from "../../components/Sections/Contact/Contact";
 import Divider from "../../components/Sections/Divider/Divider";
 
 function Home() {
-  return (
-    <main>
-      <Helmet>
-        <title>Home Page</title>
-        <meta
-          name="description"
-          content="Descrição da minha página para buscadores."
-        />
-      </Helmet>
-      <Headline />
-      <Divider />
-      <Highlight />
-      <Sponsors />
-      <Categories />
-      <Divider />
-      <Localization />
-      <Contact />
-    </main>
-  );
+    return (
+        <main>
+            <Helmet>
+                <title>Home Page</title>
+                <meta
+                    name="description"
+                    content="Descrição da minha página para buscadores."
+                />
+            </Helmet>
+            <Headline />
+            <Divider />
+            <Highlight />
+            <Sponsors />
+            <Categories />
+            <Divider />
+            <Localization />
+            <Contact />
+        </main>
+    );
 }
 
 export default Home;
