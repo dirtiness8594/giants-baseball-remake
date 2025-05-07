@@ -4,7 +4,9 @@ import { FaInstagram } from "react-icons/fa";
 import { CiCircleInfo, CiBaseball, CiMemoPad, CiCirclePlus, CiHome, CiFacebook, CiChat1 } from "react-icons/ci";
 import { BsStars, BsBookmarkHeart, BsFillHousesFill, BsFileText, BsPatchQuestion, BsWhatsapp } from "react-icons/bs";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { GiBaseballBat, GiBaseballGlove } from "react-icons/gi";
 import 'swiper/css';
+import { PiBaseballHelmet } from "react-icons/pi";
 import { RiFacebookCircleLine } from "react-icons/ri";
 
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -98,7 +100,7 @@ function App() {
                 </div>
 
                 <div className="headline__info">
-                    <BsStars />    O único time de beiseball de São Paulo.
+                    <BsStars />    O <b>único</b> time de beiseball de São Paulo.
                 </div>
 
                 <div className="headline__options">
@@ -109,15 +111,15 @@ function App() {
             </section>
 
             <div className="divider" id="divider__animated">
-                <CiBaseball />
-                <CiBaseball className="animated"/>
-                <CiBaseball />
+                <GiBaseballBat />
+                <CiBaseball className="animated" />
+                <PiBaseballHelmet />
             </div>
 
             <section className="highlight" id="about">
                 <div className="highlight__title">Conheça nosso time</div>
                 <div className="highlight__info">
-                    <CiCircleInfo /> Nossa historia
+                    <CiCircleInfo /> Entenda como surgimos
 
                     <p>
                         A muito temop dedicamos nossa paixão pelo Beisebol. Fundados em 1998. Contando hje com tantos membros, somos.
@@ -160,7 +162,7 @@ function App() {
             <div className="sponsors">
                 <h2 className="sponsors__title">Nossos patrocinadores</h2>
                 <p className="sponsor__info">
-                <CiCircleInfo /> Nossa historia
+                    <CiCircleInfo /> As empresas que nos apoiam
 
                 </p>
                 <div className="sponsors__list">
@@ -243,9 +245,9 @@ function App() {
             </div>
 
             <div className="divider">
-                <CiBaseball />
-                <CiBaseball />
-                <CiBaseball />
+                <PiBaseballHelmet />
+                <GiBaseballGlove />
+                <GiBaseballBat />
             </div>
 
             <div className="localization">
