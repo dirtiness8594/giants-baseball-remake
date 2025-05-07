@@ -12,6 +12,8 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import { useForm } from 'react-hook-form';
 import Headline from '../../components/Sections/Headline/Headline';
+import Highlight from '../../components/Sections/Highlight/Highlight';
+import Sponsors from '../../components/Sections/Sponsors/Sponsors';
 
 
 function Home() {
@@ -41,71 +43,8 @@ const onSubmit = (data) => {
                 <PiBaseballHelmet />
             </div>
 
-            <section className="highlight" id="about">
-                <div className="highlight__title">Conheça nosso time</div>
-                <div className="highlight__info">
-                    <CiCircleInfo /> Entenda como surgimos
-
-                    <p>
-                        A muito temop dedicamos nossa paixão pelo Beisebol. Fundados em 1998. Contando hje com tantos membros, somos.
-                    </p>
-
-                    <button className="localization__button">Ver história completa</button>
-
-                </div>
-                <div className="highlight__images">
-                    <Swiper
-                        // spaceBetween={50}
-                        slidesPerView={1}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
-
-                        modules={[Autoplay, Pagination]}
-                        pagination={{ clickable: true }}
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        }}
-                        loop={true}
-                    >
-                        <SwiperSlide>
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcSet="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcSet="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcSet="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1224,h=560,fit=crop,trim=0;15.34688995215311;0;15.34688995215311/YrDXLjN9Kgf9k0GL/geral-Yle5L1JK75C1ND4J.jpeg" alt="" srcSet="" />
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
-            </section>
-
-            <div className="sponsors">
-                <h2 className="sponsors__title">Nossos patrocinadores</h2>
-                <p className="sponsor__info">
-                    <CiCircleInfo /> As empresas que nos apoiam
-
-                </p>
-                <div className="sponsors__list">
-                    <div className="sponsor">
-                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=269,h=190,fit=crop/YrDXLjN9Kgf9k0GL/cloudace-A1aKkNbewXu5x5My.jpg" alt="Sponsor 1 Logo" className="sponsor__logo" />
-                        <h3 className="sponsor__name">Cloud ICE</h3>
-                        <p className="sponsor__description"></p>
-                        <a href="https://www.sponsor1website.com" target="_blank" className="sponsor__link">Visit Website</a>
-                    </div>
-
-                    <div className="sponsor">
-                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=293,h=163,fit=crop/YrDXLjN9Kgf9k0GL/maisesporte-m7VpLjR8DEHkpRlJ.png" alt="Sponsor 2 Logo" className="sponsor__logo" />
-                        <h3 className="sponsor__name">+ Esporte - Remédio</h3>
-                        <p className="sponsor__description"></p>
-                        <a href="https://www.sponsor2website.com" target="_blank" className="sponsor__link">Visit Website</a>
-                    </div>
-                </div>
-            </div>
+            <Highlight />
+            <Sponsors />
 
             <div className="categories">
 
