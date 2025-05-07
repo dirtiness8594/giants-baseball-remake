@@ -1,12 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function Aboutus() {
-
-  
-    return (
-
-      
-    );
+  return;
 }
 
 export default Aboutus;

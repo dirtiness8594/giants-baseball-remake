@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { CiCircleInfo } from "react-icons/ci";
 
 function Page() {
@@ -17,8 +17,9 @@ function Page() {
           campeonatos, treinamentos ou outras atividades do São Paulo Giants.
         </p>
         <p>
-          Sinta-se à vontade para modificar este conteúdo conforme necessário. Aqui é um
-          bom lugar para colocar notícias, regulamentos ou galerias de fotos.
+          Sinta-se à vontade para modificar este conteúdo conforme necessário.
+          Aqui é um bom lugar para colocar notícias, regulamentos ou galerias de
+          fotos.
         </p>
       </section>
     </main>
