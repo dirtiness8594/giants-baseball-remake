@@ -11,6 +11,7 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import { useForm } from 'react-hook-form';
+import Headline from '../../components/Sections/Headline/Headline';
 
 
 function Home() {
@@ -26,27 +27,13 @@ const [showMap, setShowMap] = useState(false);
 
 const onSubmit = (data) => {
     console.log('Form data:', data);
-    reset(); // limpa o form depois de enviar
+    reset();
 };
 
   return (
     <main>
 
-<section className="headline">
-                <div className="headline__text">
-                    Bem-vindo ao <br />São Paulo <span>Giants!</span>
-                </div>
-
-                <div className="headline__info">
-                    <BsStars />    O <b>único</b> time de beiseball de São Paulo.
-                </div>
-
-                <div className="headline__options">
-                    <button className="headline__option">Localização</button>
-                    <button className="headline__option">Fale conosco</button>
-                    <button className="headline__option">Ajuda</button>
-                </div>
-            </section>
+            <Headline />
 
             <div className="divider" id="divider__animated">
                 <GiBaseballBat />
