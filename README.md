@@ -1,12 +1,43 @@
-# React + Vite
+#  ⚾   giants-remake/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Giants Baseball Remake is a front-end remake of an existing baseball team's website, created for educational purposes. It serves as a clean and responsive institutional site with basic navigation and page structure to simulate a real sports team homepage.
 
-Currently, two official plugins are available:
+Built with React, the goal of this project is to study and practice modern web development patterns while recreating the feel of a classic sports website.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### 📦 installation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+01. git clone https://codeberg.org/themandalorian/giants-remake//eiro.git
+```
+
+### 🥢 usage
+
+```bash
+01. cd giants-remake/
+02. npm install
+03. npm run dev
+04. Open your browser and navigate to http://localhost:5173
+```
+### 💫 features
+
+- Institutional website structure
+- Multi-page navigation (React Router)
+- Responsive design
+- Built with React and modern tooling
+- Educational purpose remake of a real website
+
+### 🪡 development
+
+After clone, feel free to customize the theme.
+
+### 📕 updates
+
+See the UPDATE.me file for changelogs and upcoming features.
+
+### 📜 license
+[MIT](https://choosealicense.com/licenses/mit/)
+
+### 🧩 creator
+
+@themandalorian
