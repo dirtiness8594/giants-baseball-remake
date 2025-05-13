@@ -35,6 +35,9 @@ After clone, feel free to customize the theme.
 
 See the UPDATE.me file for changelogs and upcoming features.
 
+### 📕 Disclaimer
+This project is a **non-commercial** remake of a publicly available design, made solely for educational and portfolio-building purposes. It is not affiliated with or endorsed by any brand or company.
+
 ### 📜 license
 [MIT](https://choosealicense.com/licenses/mit/)
 
