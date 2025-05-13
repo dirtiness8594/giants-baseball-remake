@@ -8,13 +8,13 @@ Built with React, the goal of this project is to study and practice modern web d
 ### 📦 installation
 
 ```bash
-01. git clone https://codeberg.org/themandalorian/giants-remake//eiro.git
+01. git clone https://codeberg.org/themandalorian/giants-remake.git
 ```
 
 ### 🥢 usage
 
 ```bash
-01. cd giants-remake/
+01. cd giants-remake
 02. npm install
 03. npm run dev
 04. Open your browser and navigate to http://localhost:5173
