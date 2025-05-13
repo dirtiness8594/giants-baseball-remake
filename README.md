@@ -1,4 +1,4 @@
-#  ⚾   giants-remake/
+#  ⚾   giants-remake
 
 Giants Baseball Remake is a front-end remake of an existing baseball team's website, created for educational purposes. It serves as a clean and responsive institutional site with basic navigation and page structure to simulate a real sports team homepage.
 
